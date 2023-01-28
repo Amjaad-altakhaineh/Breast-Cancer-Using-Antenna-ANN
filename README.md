@@ -64,3 +64,7 @@ j.	Training the model: After providing a few setup settings that were previously
 g- Model evaluation: Once the model has been trained, it can be assessed using the model. Predict. We can then determine how well it performs when applied to data that it has never seen before based on the testing dataset.
 
 k.	Model Performance Measurement: Tests of its final performance are now necessary. Additionally, the ANN and Random Forest are just another regression technique, thus you may use any regression statistic to evaluate the outcome. You could make use of MAE, MSE, MASE, RMSE, MAPE, SMAPE, and other models. However, based on my observations, MSE and MAE are the most frequently employed. To assess the effectiveness of the model, both of them will be a good fit. The error of the perfect model will be equal to zero, thus if you utilize them, keep in mind that the less your error, the better. R2 can be used to present the performance of the model as a percentage of 100% for accuracy metrics
+
+
+Conclusion
+It is noted that the performance of the second dataset is better than the first, and this gives the impression that increasing the features and the number of rows may improve the performance of the model in the near future.
