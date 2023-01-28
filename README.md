@@ -3,7 +3,7 @@
 
 1-  Aim and objectives: This project aims and contributes to monitoring and predicting the size and location of the tumor in its early stages without the need to go to the doctor using radio waves emitted from the antennas, where an antenna was built inside the breast (the transmitter) and the other outside the breast (the receiver). Starting at 1 mm, place the antenna in three directions
 
-2- Proposed dataset: Due to time constraints, as data extraction takes a full month, two datasets were extracted, the first with three features with 973 rows  , and the second with six features with 199 rows 
+2- Proposed dataset: Due to time constraints, as data extraction takes a full month, two datasets were extracted, the first with three features with 973 rows  , and the second with six features with 199 rows . To this end, in this folder you will see to py.codes for the both dataset using the same ANN models The first which refere to the first dataset ( Breast-Cancer-1) and the secound one for the secound dataset ( Breast-Cancer-2) 
 
 
 
