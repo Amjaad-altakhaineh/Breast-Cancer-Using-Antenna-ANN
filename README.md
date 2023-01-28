@@ -1,5 +1,5 @@
 # Breast-Cancer-Using-Antenna-ANN
----- Abstract---: This project proposes a new method that extracts features based on the electromagnetic wave parameters obtained from the compact antenna for breast cancer size and its location detection using machine learning and Deep learing. The electromagnetic signals are transmitted via an antenna from one end of the breast (inside the breast) and are received on the other end (outside the breast). Therefore, these signals can pass through the cancer tumor (which looks like an obstacle), and these signals/waves can defect and vary with different tumor cases (sizes and locations). By doing so, the tumor's size and location can be predicted easily. To this end,  the regression performance of these datasets for breast cancer size and location is tested for the first time using the Random Forest machine learning-based multi-output regressor and artificial neural network. The project findings indicate that the prediction of the size and location of the malignant tumor using the antenna technique dataset based on electromagnetic waves performs better in comparison to the other traditional techniques. The machine and deep learning algorithms are tested in Python on different sets of data to determine their accuracy and performance
+---- Abstract---: This project proposes a new method that extracts features based on the electromagnetic wave parameters obtained from the compact antenna for breast cancer size and its location detection using  Deep learing. The electromagnetic signals are transmitted via an antenna from one end of the breast (inside the breast) and are received on the other end (outside the breast). Therefore, these signals can pass through the cancer tumor (which looks like an obstacle), and these signals/waves can defect and vary with different tumor cases (sizes and locations). By doing so, the tumor's size and location can be predicted easily. To this end,  the regression performance of these datasets for breast cancer size and location is tested using multi-output regression artificial neural network. The project findings indicate that the prediction of the size and location of the malignant tumor using the antenna technique dataset based on electromagnetic waves performs better in comparison to the other traditional techniques. The deep learning are tested in Python on different sets of data to determine their accuracy and performance
 
 1-  Aim and objectives: This project aims and contributes to monitoring and predicting the size and location of the tumor in its early stages without the need to go to the doctor using radio waves emitted from the antennas, where an antenna was built inside the breast (the transmitter) and the other outside the breast (the receiver). Starting at 1 mm, place the antenna in three directions
 
@@ -20,6 +20,15 @@
 4- Proposed Design, Data acquisition, and processing 
 The simulated/measured electric data from the simulated microstrip antennas is collected using the CST simulator . The 3D breast model was created using a variety of materials [16]. It is crucial to ensure that the breast has permittivity-based dielectric properties that are comparable to those of real breasts. The permittivity (ε_skin=17.7,ε_fat=3.4,ε_Fiber=16,ε_Tumor=18  ) indicates the electrical characteristics of the substance that would allow electromagnetic waves to determine if the substance or cell is malignant or not, such as a gland, by the presence or absence of certain electrical qualities. The breast employed in this study followed the same design recommendations made by earlier researchers . The original region/place where the tumor is designed is inside the breast, in the middle of the breast. For testing, several tumor sizes (radices) ranging from 1 to 2.2 mm are produced
 
+![image](https://user-images.githubusercontent.com/123154408/215286475-6e4d3da6-d4f5-415a-9b1d-60f53880f977.png)
+
+![image](https://user-images.githubusercontent.com/123154408/215286488-96b7e8d8-2f24-4cde-903e-83e38d7c8910.png)
+
+![image](https://user-images.githubusercontent.com/123154408/215286491-4fb4b3ac-6db3-4d19-8c09-2d01863014bc.png)
+
+
+
+
 
 4-1 Creating a Multi-output Regersor with Keras  (artificial neural network)
 In order to evaluate the project and to generalize its credibility, in this section, the artificial neural network was presented as another model to test both datasets. The neural network based on deep learning participates in a number of analytical steps used in Random Forest, such as the method of reading data, exploring it, sorting it into inputs and outputs, and splitting it into data training and testing so there is no need to repeat these steps. What is new here is that the data must be scaled to prepare it to enter the artificial network architecture.  Neural network models have the advantage of learning a continuous function that can model a more tolerant connection between changes in input and output. They also support multi-output regression. 
@@ -39,6 +48,10 @@ e-	Prepare the Neural Network Architecture:  Now we will build a neural network 
 4-	The output layer: In our project, we have a multi-output regressor, a task that has four output variables (the size of the malignant tumor, and its location in the three-axis) will require a regressor neural network output layer with four nodes in the output layer, each with the linear (default) activation function. Therefore, the argument “n_output” is defined as an output dimension, as the value of this argument is equal to 4. 
 
 ![image](https://user-images.githubusercontent.com/123154408/215285660-2f40c52b-ab7b-4a6f-83d4-80ab4a890655.png)
+
+
+
+![image](https://user-images.githubusercontent.com/123154408/215286311-920b6b53-61b1-4a93-8943-36ecbb5793f6.png)
 
 
 
