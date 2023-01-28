@@ -1,20 +1,34 @@
 # Breast-Cancer-Using-Antenna-ANN
----- Abstract---: This project proposes a new method that extracts features based on the electromagnetic wave parameters obtained from the compact antenna for breast cancer size and its location detection using  Deep learing. The electromagnetic signals are transmitted via an antenna from one end of the breast (inside the breast) and are received on the other end (outside the breast). Therefore, these signals can pass through the cancer tumor (which looks like an obstacle), and these signals/waves can defect and vary with different tumor cases (sizes and locations). By doing so, the tumor's size and location can be predicted easily. To this end,  the regression performance of these datasets for breast cancer size and location is tested using multi-output regression artificial neural network. The project findings indicate that the prediction of the size and location of the malignant tumor using the antenna technique dataset based on electromagnetic waves performs better in comparison to the other traditional techniques. The deep learning are tested in Python on different sets of data to determine their accuracy and performance
+---- Abstract---: 
 
-1-  Aim and objectives: This project aims and contributes to monitoring and predicting the size and location of the tumor in its early stages without the need to go to the doctor using radio waves emitted from the antennas, where an antenna was built inside the breast (the transmitter) and the other outside the breast (the receiver). Starting at 1 mm, place the antenna in three directions
+This project proposes a new method that extracts features based on the electromagnetic wave parameters obtained from the compact antenna for breast cancer size and its location detection using  Deep learing. The electromagnetic signals are transmitted via an antenna from one end of the breast (inside the breast) and are received on the other end (outside the breast). Therefore, these signals can pass through the cancer tumor (which looks like an obstacle), and these signals/waves can defect and vary with different tumor cases (sizes and locations). By doing so, the tumor's size and location can be predicted easily. To this end,  the regression performance of these datasets for breast cancer size and location is tested using multi-output regression artificial neural network. The project findings indicate that the prediction of the size and location of the malignant tumor using the antenna technique dataset based on electromagnetic waves performs better in comparison to the other traditional techniques. The deep learning are tested in Python on different sets of data to determine their accuracy and performance
 
-2- Proposed dataset: Due to time constraints, as data extraction takes a full month, two datasets were extracted, the first with three features with 973 rows  , and the second with six features with 199 rows . To this end, in this folder you will see to py.codes for the both dataset using the same ANN models The first which refere to the first dataset ( Breast-Cancer-1) and the secound one for the secound dataset ( Breast-Cancer-2) 
+1-  Aim and objectives: 
+
+This project aims and contributes to monitoring and predicting the size and location of the tumor in its early stages without the need to go to the doctor using radio waves emitted from the antennas, where an antenna was built inside the breast (the transmitter) and the other outside the breast (the receiver). Starting at 1 mm, place the antenna in three directions
+
+2- Proposed dataset:
+
+Due to time constraints, as data extraction takes a full month, two datasets were extracted, the first with three features with 973 rows  , and the second with six features with 199 rows . To this end, in this folder you will see to py.codes for the both dataset using the same ANN models The first which refere to the first dataset ( Breast-Cancer-1) and the secound one for the secound dataset ( Breast-Cancer-2) 
 
 
 
 
-3- Methodology:  The proposed datasets  will be extracted from electromagnetic waves received by a receiving antenna (located outside the breast), as the data includes electrical measured quantities like (Transmitted power, Gain, Radiation Efficiency, voltage, current, and impedance). In order to anticipate the condition of the tumor, the machine-learning model will be updated whenever the antenna measures a new value.
-	- Transmitted power: The amplitude, intensity, or total power of a transmitted wave in relation to an incident wave is described by a transmission coefficient.
-	-Gain: The gain of a receiving antenna indicates how effectively the antenna transforms radio waves coming from a specific direction into electrical power.
-	-Radiation Efficiency: In a receiving antenna, it refers to the percentage of the radio wave's power that is actually supplied as an electrical signal after being   intercepted by the antenna.
-	- Voltage: The difference in electric potential between two places is often referred to as electric pressure, electric tension, or (electric) potential difference. and is easily measurable.
-	- Current: An electric current is a flow of positively or negatively charged particles, such as electrons or ions, that travels through an electrical conductor or a vacuum. The net rate of flow of electric charge through a surface or into a control volume is used to calculate it.
-	- Impedance An object's electrical resistance is a measurement of how easily an electric current travels through it.
+3- Methodology:  
+
+The proposed datasets  will be extracted from electromagnetic waves received by a receiving antenna (located outside the breast), as the data includes electrical measured quantities like (Transmitted power, Gain, Radiation Efficiency, voltage, current, and impedance). In order to anticipate the condition of the tumor, the machine-learning model will be updated whenever the antenna measures a new value.
+
+- Transmitted power: The amplitude, intensity, or total power of a transmitted wave in relation to an incident wave is described by a transmission coefficient.
+
+-Gain: The gain of a receiving antenna indicates how effectively the antenna transforms radio waves coming from a specific direction into electrical power.
+
+-Radiation Efficiency: In a receiving antenna, it refers to the percentage of the radio wave's power that is actually supplied as an electrical signal after being   intercepted by the antenna.
+
+- Voltage: The difference in electric potential between two places is often referred to as electric pressure, electric tension, or (electric) potential difference. and is easily measurable.
+
+- Current: An electric current is a flow of positively or negatively charged particles, such as electrons or ions, that travels through an electrical conductor or a vacuum. The net rate of flow of electric charge through a surface or into a control volume is used to calculate it.
+
+- Impedance An object's electrical resistance is a measurement of how easily an electric current travels through it.
  The methodology consists of multi phases as explained below.
  
 4- Proposed Design, Data acquisition, and processing 
