@@ -38,6 +38,12 @@ e-	Prepare the Neural Network Architecture:  Now we will build a neural network 
 3-	The hidden layers: The first dataset's three inputs are passed via four hidden layers that were selected after some trial and error. As we approach the output layer, the neurons in our dense layers will get narrower. This enables us to identify numerous trends, which will improve the model's performance. If you're wondering how I arrived at the number of neurons in the hidden layers, I ran a number of tests and discovered that this number produces good results in terms of accuracy and error. The first, second, third, and fourth are therefore each built with 128, 64, 32, and 16 neurons, respectively. We employ ReLU as an activations function, as is customary.
 4-	The output layer: In our project, we have a multi-output regressor, a task that has four output variables (the size of the malignant tumor, and its location in the three-axis) will require a regressor neural network output layer with four nodes in the output layer, each with the linear (default) activation function. Therefore, the argument “n_output” is defined as an output dimension, as the value of this argument is equal to 4. 
 
+![image](https://user-images.githubusercontent.com/123154408/215285660-2f40c52b-ab7b-4a6f-83d4-80ab4a890655.png)
+
+
+
+
+
 f.	Compiling the model: We now generate a real model from the model selection we just created. We instantiate the model using the Adam optimizer and mean absolute error (MAE), a loss function that may be used effectively in a variety of multi-output regression applications.
 
 j.	Training the model: After providing a few setup settings that were previously defined, we fit the training data to the model. Now, the model will begin training
