@@ -1,20 +1,20 @@
 # Breast-Cancer-Using-Antenna-ANN
----- Abstract---: 
+# Abstract: 
 
 This project proposes a new method that extracts features based on the electromagnetic wave parameters obtained from the compact antenna for breast cancer size and its location detection using  Deep learing. The electromagnetic signals are transmitted via an antenna from one end of the breast (inside the breast) and are received on the other end (outside the breast). Therefore, these signals can pass through the cancer tumor (which looks like an obstacle), and these signals/waves can defect and vary with different tumor cases (sizes and locations). By doing so, the tumor's size and location can be predicted easily. To this end,  the regression performance of these datasets for breast cancer size and location is tested using multi-output regression artificial neural network. The project findings indicate that the prediction of the size and location of the malignant tumor using the antenna technique dataset based on electromagnetic waves performs better in comparison to the other traditional techniques. The deep learning are tested in Python on different sets of data to determine their accuracy and performance
 
-1-  Aim and objectives: 
+# Aim and objectives: 
 
 This project aims and contributes to monitoring and predicting the size and location of the tumor in its early stages without the need to go to the doctor using radio waves emitted from the antennas, where an antenna was built inside the breast (the transmitter) and the other outside the breast (the receiver). Starting at 1 mm, place the antenna in three directions
 
-2- Proposed dataset:
+# Proposed dataset:
 
 Due to time constraints, as data extraction takes a full month, two datasets were extracted, the first with three features with 973 rows  , and the second with six features with 199 rows . To this end, in this folder you will see to py.codes for the both dataset using the same ANN models The first which refere to the first dataset ( Breast-Cancer-1) and the secound one for the secound dataset ( Breast-Cancer-2) 
 
 
 
 
-3- Methodology:  
+# Methodology:  
 
 The proposed datasets  will be extracted from electromagnetic waves received by a receiving antenna (located outside the breast), as the data includes electrical measured quantities like (Transmitted power, Gain, Radiation Efficiency, voltage, current, and impedance). In order to anticipate the condition of the tumor, the machine-learning model will be updated whenever the antenna measures a new value.
 
@@ -31,7 +31,7 @@ The proposed datasets  will be extracted from electromagnetic waves received by 
 - Impedance An object's electrical resistance is a measurement of how easily an electric current travels through it.
  The methodology consists of multi phases as explained below.
  
-4- Proposed Design, Data acquisition, and processing 
+# Proposed Design, Data acquisition, and processing 
 The simulated/measured electric data from the simulated microstrip antennas is collected using the CST simulator . The 3D breast model was created using a variety of materials [16]. It is crucial to ensure that the breast has permittivity-based dielectric properties that are comparable to those of real breasts. The permittivity (ε_skin=17.7,ε_fat=3.4,ε_Fiber=16,ε_Tumor=18  ) indicates the electrical characteristics of the substance that would allow electromagnetic waves to determine if the substance or cell is malignant or not, such as a gland, by the presence or absence of certain electrical qualities. The breast employed in this study followed the same design recommendations made by earlier researchers . The original region/place where the tumor is designed is inside the breast, in the middle of the breast. For testing, several tumor sizes (radices) ranging from 1 to 2.2 mm are produced
 
 ![image](https://user-images.githubusercontent.com/123154408/215286475-6e4d3da6-d4f5-415a-9b1d-60f53880f977.png)
@@ -44,7 +44,7 @@ The simulated/measured electric data from the simulated microstrip antennas is c
 
 
 
-4-1 Creating a Multi-output Regersor with Keras  (artificial neural network)
+#Creating a Multi-output Regersor with Keras  (artificial neural network)
 In order to evaluate the project and to generalize its credibility, in this section, the artificial neural network was presented as another model to test both datasets. The neural network based on deep learning participates in a number of analytical steps used in Random Forest, such as the method of reading data, exploring it, sorting it into inputs and outputs, and splitting it into data training and testing so there is no need to repeat these steps. What is new here is that the data must be scaled to prepare it to enter the artificial network architecture.  Neural network models have the advantage of learning a continuous function that can model a more tolerant connection between changes in input and output. They also support multi-output regression. 
 
 a-	Import: the first step is importing all the Python dependencies that we need. We will use two packages: sklearn, primarily for data preprocessing-related activities, and TensorFlow, for the Neural network. From sklearn, we import train_test_split - allowing us to split the data into a training and testing dataset, and for scaling the data. In addition, sklearn provides different performance measurement methods such as mean_squared_error and R^2 (sm). We will build our neural network using Dense (i.e. densely connected) layers from the Sequential API of Tensorflow. To analyze the performance visually, the plot function from matplotlib will be used to plot the val loss and train loss curves. To compute loss, we utilize Mean Squared Error, and to optimize, we use Adam.
@@ -80,5 +80,5 @@ g- Model evaluation: Once the model has been trained, it can be assessed using t
 k.	Model Performance Measurement: Tests of its final performance are now necessary. Additionally, the ANN and Random Forest are just another regression technique, thus you may use any regression statistic to evaluate the outcome. You could make use of MAE, MSE, MASE, RMSE, MAPE, SMAPE, and other models. However, based on my observations, MSE and MAE are the most frequently employed. To assess the effectiveness of the model, both of them will be a good fit. The error of the perfect model will be equal to zero, thus if you utilize them, keep in mind that the less your error, the better. R2 can be used to present the performance of the model as a percentage of 100% for accuracy metrics
 
 
-Conclusion
+# Conclusion
 It is noted that the performance of the second dataset is better than the first, and this gives the impression that increasing the features and the number of rows may improve the performance of the model in the near future.
