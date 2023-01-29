@@ -44,7 +44,7 @@ The simulated/measured electric data from the simulated microstrip antennas is c
 
 
 
-# Creating a Multi-output Regersor with Keras  (artificial neural network)
+# Creating a Multi-output Regersor with artificial neural network,  ANN
 
 In order to evaluate the project and to generalize its credibility, in this section, the artificial neural network was presented as another model to test both datasets. The neural network based on deep learning participates in a number of analytical steps used in Random Forest, such as the method of reading data, exploring it, sorting it into inputs and outputs, and splitting it into data training and testing so there is no need to repeat these steps. What is new here is that the data must be scaled to prepare it to enter the artificial network architecture.  Neural network models have the advantage of learning a continuous function that can model a more tolerant connection between changes in input and output. They also support multi-output regression. 
 
