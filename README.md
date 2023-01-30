@@ -34,11 +34,7 @@ The proposed datasets  will be extracted from electromagnetic waves received by 
 # Proposed Design, Data acquisition, and processing 
 The simulated/measured electric data from the simulated microstrip antennas is collected using the CST simulator . The 3D breast model was created using a variety of materials [16]. It is crucial to ensure that the breast has permittivity-based dielectric properties that are comparable to those of real breasts. The permittivity (ε_skin=17.7,ε_fat=3.4,ε_Fiber=16,ε_Tumor=18  ) indicates the electrical characteristics of the substance that would allow electromagnetic waves to determine if the substance or cell is malignant or not, such as a gland, by the presence or absence of certain electrical qualities. The breast employed in this study followed the same design recommendations made by earlier researchers . The original region/place where the tumor is designed is inside the breast, in the middle of the breast. For testing, several tumor sizes (radices) ranging from 1 to 2.2 mm are produced
 
-![image](https://user-images.githubusercontent.com/123154408/215286475-6e4d3da6-d4f5-415a-9b1d-60f53880f977.png)
-
-![image](https://user-images.githubusercontent.com/123154408/215286488-96b7e8d8-2f24-4cde-903e-83e38d7c8910.png)
-
-![image](https://user-images.githubusercontent.com/123154408/215286491-4fb4b3ac-6db3-4d19-8c09-2d01863014bc.png)
+![image](https://user-images.githubusercontent.com/123154408/215286475-6e4d3da6-d4f5-415a-9b1d-60f53880f977.png) ![image](https://user-images.githubusercontent.com/123154408/215286488-96b7e8d8-2f24-4cde-903e-83e38d7c8910.png) ![image](https://user-images.githubusercontent.com/123154408/215286491-4fb4b3ac-6db3-4d19-8c09-2d01863014bc.png)
 
 
 
